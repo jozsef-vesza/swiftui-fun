@@ -1,7 +1,7 @@
 # Offset Demo
 In this project I tried to implement a list of scrolling items with a header view which changes its height based on the scroll offset.
 
-![](.readme/recording.gif)
+<img src=".readme/recording.gif" width="300">
 
 ## Requirements
 This project is using Version 12.0 beta (12A6159).
@@ -100,7 +100,7 @@ var body: some View {
 ```
 
 When doing this, the header was overlapping the list items by default, which is not the look I was going for:
-![](.readme/overlap.png)
+<img src=".readme/overlap.png" width="300">
 
 At first I tried using [alignment guides](https://developer.apple.com/documentation/swiftui/textfield/alignmentguide(_:computevalue:)-zywe), but that ended up pushing the entire scroll view contents down, so I ended up adding an invisible view as the first element of the list (with a height that matches the header view's height):
 ```swift
